@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+     <title>寿司</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&amp;family=Shippori+Mincho&amp;display=swap">
+     <link rel="stylesheet" href="assets/css/style02.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><img class="logo" src="assets/img/logo_umaemon.svg" alt="高田馬場 馬右衛門"></h1>
+            </header>
+
+            <main role="main">
+                <!--ファーストビュー-->
+                <section id="first-view">
+                    <h2>人生に、寿司の時間を。</h2>
+                </section>
+
+                <!--馬右衛門とは-->
+                <section id="about">
+                    <h2><span class="en">About</span>寿司とは</h2>
+                    <p>寿司（すし、鮨・鮓）とは、一般に米飯などと主に魚介類を組み合わせた和食。<br>
+                        特に握り寿司のこと。<br>
+                        伝統的にわさびと一緒に食べられる。</p>
+                        <a class="btn_detail" href="#">詳しく見る</a>
+                </section>
+
+                <!--商品のご案内-->
+                <section id="products">
+                    <h2><span class="en">Origin</span>寿司の起源</h2>
+                    <p>1728年（享保13年）に大阪で創刊された『料理網目調味抄』には<br>
+                        「箱寿司に酢を注ぐ」との記載がある。<br>
+                        その箱寿司の原型になったと云われるなれずしは魚の保存が主であり、<br>
+                        飯は食材と言うより漬け材料という扱いになる。<br>
+                        この自然に酸味が出るのを待たずに、<br>
+                        飯の量を多くして酢を加えて作ったものが現代の寿司である。</p>
+                        <a class="btn_detail" href="#">詳しく見る</a>
+                </section>
+
+                <!--店舗・催事のご案内-->
+                <section id="shop-event">
+                    <h2><span class="en">world &amp; Sushi</span>世界の「sushi」へ</h2>
+                    <a class="btn_detail" href="#">詳しく見る</a>
+                </section>
+            </main>
+
+            <footer>
+                <small class="copyright">Copyright 2022</small>
+            </footer>
+        </div>
+        <div class="pagetop">↑</div>
+    </body>
+</html>

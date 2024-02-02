@@ -1,0 +1,153 @@
+@import "https://unpkg.com/ress/dist/ress.min.css";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.6em;
+}
+
+/* header */
+header {
+    background: #4B6E2D;
+    padding: 1rem 0;
+}
+header h1 {
+    text-align: center;
+}
+header .logo {
+    width: 10rem;
+}
+
+/* section */
+section {
+    padding: 10rem 0;
+    text-align: center;
+    background: #212121;
+}
+section h2, section p {
+    text-shadow: 0.1rem 0,1rem 0.4rem #212121;
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+section h2 .en {
+    display: block;
+    font-size: 0.6em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+section p {
+    line-height: 3;
+}
+
+/* button */
+.btn_detail {
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 14em;
+    margin: 6rem auto 0;
+    padding: 1em 0;
+    border: 0.1rem solid white;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    transition: 0.3s all;
+}
+.btn_detail:hover {
+    background: white;
+    color: #4B6E2D;
+}
+
+/* #first-view */
+#first-view {
+    height: 80vh;
+    background: url(https://plus.unsplash.com/premium_photo-1661768443189-d6a3c9181d6d?auto=format&fit=crop&q=80&w=869&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    position: relative;
+}
+#first-view h2 {
+    position: absolute;
+    top: 4em;
+    left: 10%;
+    font-family: "Shippori Mincho", serif;
+    color: #212121;
+    font-size: 4rem;
+    text-shadow: none;
+}
+
+/* #about */
+#about {
+    background-image: url(https://images.unsplash.com/photo-1615361200141-f45040f367be?auto=format&fit=crop&q=80&w=464&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #444;
+}
+#about .btn_detail {
+    margin: 10rem;
+}
+
+/* #prodacts */
+#products {
+    width: 50%;
+    position: relative;
+    background: url(../img/bg_umaemon.svg) center/40% no-repeat #62893a;
+}
+#products::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1667708976734-7869a254910b?auto=format&fit=crop&q=80&w=387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center/cover no-repeat;
+}
+
+/* #shop-event */
+#shop-event {
+    background: url(https://images.unsplash.com/photo-1617196034183-421b4917c92d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fCVFNSVBRiVCRiVFNSU4RiVCOHxlbnwwfHwwfHx8MA%3D%3D) center/cover no-repeat;
+}
+#shop-event .btn_detail {
+    margin-top: 30rem;
+}
+
+/* footer */
+footer {
+    background: #4B6E2D;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+}
